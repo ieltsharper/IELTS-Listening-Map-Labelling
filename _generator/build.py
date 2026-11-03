@@ -23,7 +23,7 @@ EXERCISES = [
         "image": "img/cam19-test1-farley-house.png",
         "alt": "Map of Farley House: a car park at the bottom (south), the old stables and the house above it, "
         "a large lake to the west, a smaller lake to the north-east, woods, paths and the letters A to H.",
-        "audio": "",
+        "audio": "1PniSrdi6ERZ13Szsl8SasKkeFkmCnhqY",
         "cue": "The track is the whole of Part 2. Questions 16–20 start about halfway, when the speaker says "
         "<em>“Now on Sunday, we’ll be taking our visitors to Farley House.”</em> "
         "Before you play it, take 30 seconds to study the map: find the car park, the compass and the paths.",
@@ -66,7 +66,7 @@ EXERCISES = [
         "image": "img/cam21-test2-melby-coal-mine.png",
         "alt": "Map of Melby Coal Mine: the car park in the south-east, the main visitor centre with the ticket "
         "office, the engine house in the west, covered walkways and buildings labelled A to I.",
-        "audio": "",
+        "audio": "1EJvWQCi6WkpNECZYte3wsWBmWHNJ25Dw",
         "cue": "The track is the whole of Part 2. Questions 15–20 start after Questions 13–14, when the speaker "
         "says <em>“Melby Coal Mine has been open to the public for twenty years.”</em> "
         "Before you play it, take 30 seconds to study the map: find the car park, the ticket office, the compass "
