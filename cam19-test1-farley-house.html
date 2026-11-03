@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farley House – Map labelling – IELTS Harper</title>
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="listening.css">
+</head>
+<body>
+<nav class="topbar" aria-label="IELTS Harper">
+  <div class="topbar-inner">
+    <a class="brand" href="https://ieltsharper.github.io/portal/"><span class="brand-mark" aria-hidden="true">IH</span>IELTS Harper Portal</a>
+    <a class="topbar-link" href="./">All maps</a>
+    <a class="topbar-link" href="https://ieltsharper.github.io/portal/">&larr; Back to the portal</a>
+  </div>
+</nav>
+<main class="container">
+  <header>
+    <h1>Farley House</h1>
+    <p class="meta">Cambridge IELTS 19 &middot; Test 1 &middot; Listening Part 2 &middot; Questions 16–20</p>
+    <div class="instructions">
+      Play the audio and choose the correct letter for each place. You hear it <strong>once</strong> in the exam,
+      so try a first listen without pausing. Then press <strong>Check answers</strong>, listen again with the
+      transcript, and see which words gave each answer.
+    </div>
+  </header>
+
+  <section class="card audio-box" aria-labelledby="audio-title">
+    <h2 class="section-title" id="audio-title">Audio</h2>
+    <div id="audio"></div>
+  </section>
+
+  <section class="card" aria-labelledby="q-title">
+    <h2 class="section-title" id="q-title">Questions 16–20</h2>
+    <p class="rubric">Label the map below.</p>
+    <p class="rubric">Choose the correct letter, <strong>A–H</strong>, for Questions 16–20.</p>
+    <h3 class="map-title">Farley House</h3>
+    <div class="map-frame"><img src="img/cam19-test1-farley-house.png" alt="Map of Farley House: a car park at the bottom (south), the old stables and the house above it, a large lake to the west, a smaller lake to the north-east, woods, paths and the letters A to H."></div>
+    <ol class="questions" id="questions"></ol>
+    <div class="controls">
+      <button type="button" class="btn-check" id="btn-check">Check answers</button>
+      <button type="button" id="btn-answers">Show answers</button>
+      <button type="button" class="btn-reset" id="btn-reset">Reset</button>
+      <span class="score-display" id="score" aria-live="polite"></span>
+    </div>
+  </section>
+
+  <section class="card transcript" aria-labelledby="t-title">
+    <h2 class="section-title" id="t-title">Transcript</h2>
+    <p class="locked" id="transcript-locked">Check your answers first, then the transcript opens here.</p>
+    <button type="button" id="btn-transcript" hidden>Show transcript</button>
+    <div id="transcript-body" hidden></div>
+  </section>
+</main>
+
+<script id="exercise" type="application/json">
+{
+ "id": "cam19-test1-farley-house",
+ "title": "Farley House",
+ "letters": "ABCDEFGH",
+ "audio": "",
+ "cue": "The track is the whole of Part 2. Questions 16–20 start about halfway, when the speaker says <em>“Now on Sunday, we’ll be taking our visitors to Farley House.”<\/em> Before you play it, take 30 seconds to study the map: find the car park, the compass and the paths.",
+ "questions": [
+  {
+   "n": 16,
+   "label": "Farm shop",
+   "answer": "G"
+  },
+  {
+   "n": 17,
+   "label": "Disabled entry",
+   "answer": "C"
+  },
+  {
+   "n": 18,
+   "label": "Adventure playground",
+   "answer": "B"
+  },
+  {
+   "n": 19,
+   "label": "Kitchen gardens",
+   "answer": "D"
+  },
+  {
+   "n": 20,
+   "label": "The Temple of the Four Winds",
+   "answer": "A"
+  }
+ ],
+ "transcript": [
+  "Now on Sunday, we’ll be taking our visitors to Farley House. You may not all be familiar with it, so here’s a map to help you. You can see the car park at the bottom of the map. There’s an excellent farm shop in the grounds where our visitors can buy local produce – {16:it’s in the old stables, which is the first building you come to}. They’re built round a courtyard, and the shop’s {16:in the far corner on the left}. There’s also a small café on the right as you go in.",
+  "I know that one or two of our visitors may not be all that mobile. The main entrance to the house has a lot of steps so you might want to use the disabled entry. {17:This is on the far side of the house from the car park}.",
+  "Children will probably be most interested in the adventure playground. {18:That’s at the northern end of the larger lake, in a bend on the path that leads to the lake}. There’s lots for children to do there.",
+  "There are a number of lovely gardens near the house. {19:The kitchen gardens are rectangular and surrounded by a wall. They’re to the north-east of the house, quite near the smaller lake}. They’re still in use and have a great collection of fruit and vegetables.",
+  "The Temple of the Four Winds is a bit more of a walk – but it’s worth it. Take the path from the car park and go past the western sides of the stables and the house. Then {20:when the path forks, take the right-hand path. Go up there with the woods on your left and the temple is right at the end}. There are great views over the whole area."
+ ]
+}
+</script>
+<script src="listening.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* Map-labelling pages: audio, map, answer rows, transcript. Builds on theme.css. */
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 12px;
+}
+
+.audio-box iframe {
+  width: 100%;
+  height: 72px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--brand-soft);
+}
+
+.audio-box .audio-missing {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--brand-soft);
+  color: var(--warning);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.audio-box .audio-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.audio-box .cue {
+  margin: 12px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.rubric {
+  margin: 0 0 4px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.map-title {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin: 16px 0 12px;
+}
+
+/* The map stays on white in dark mode: it is a scan of a printed page. */
+.map-frame {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.map-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.questions {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  gap: 8px;
+}
+
+.questions li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.questions .num {
+  font-weight: 800;
+}
+
+.questions label {
+  font-weight: 600;
+}
+
+.questions select {
+  font: inherit;
+  font-weight: 700;
+  min-width: 5.5rem;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--muted);
+  background: var(--card);
+  color: var(--ink);
+}
+
+.questions li.correct {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+}
+
+.questions li.incorrect {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+}
+
+.questions .feedback {
+  grid-column: 2 / -1;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.questions li.correct .feedback {
+  color: var(--ok);
+}
+
+.questions li.incorrect .feedback {
+  color: var(--danger);
+}
+
+.transcript h2 {
+  margin-top: 0;
+}
+
+.transcript p {
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0 0 12px;
+}
+
+.transcript mark {
+  background: var(--brand-soft);
+  color: var(--ink);
+  border-bottom: 2px solid var(--brand);
+  padding: 0 2px;
+}
+
+.transcript mark b {
+  color: var(--heading);
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+.locked {
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .questions li {
+    grid-template-columns: 2rem 1fr;
+  }
+  .questions select {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+.menu-list .meta-inline {
+  display: block;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.menu-list a {
+  flex-wrap: wrap;
+}
