@@ -105,12 +105,24 @@ EXERCISES = [
     },
 ]
 
-TOPBAR = """<nav class="topbar" aria-label="IELTS Harper">
+_TOPBAR = """<nav class="topbar" aria-label="IELTS Harper">
   <div class="topbar-inner">
+    <a class="topbar-link" href="https://ieltsharper.github.io/portal/" aria-label="Back to the portal" title="Back to the portal">&larr;</a>
     <a class="brand" href="https://ieltsharper.github.io/portal/"><span class="brand-mark" aria-hidden="true">IH</span>IELTS Harper Portal</a>
-    {extra}<a class="topbar-link" href="https://ieltsharper.github.io/portal/">&larr; Back to the portal</a>
+    {extra}
   </div>
 </nav>"""
+
+
+class _Topbar:
+    """Fills the top bar and drops the blank line an empty {extra} would leave."""
+
+    @staticmethod
+    def format(**kw):
+        return _TOPBAR.format(**kw).replace("    \n  </div>", "  </div>")
+
+
+TOPBAR = _Topbar()
 
 HEAD = """<!DOCTYPE html>
 <html lang="en">
